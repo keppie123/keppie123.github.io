@@ -11,22 +11,14 @@
             text-align: left;
             padding: 8px;
         }
-        tr:nth-child(n+2) {
-            background-color: #a0a0a0;
-        }
-        tr:nth-child(n+5) {
-            background-color: #d7d7d7;
-        }
-        tr:nth-child(n+8) {
-            background-color: #a0a0a0;
-        }
-        tr:nth-child(n+12) {
+        tr {
             background-color: #d7d7d7;
         }
         .progress {
             width: 600px;
             padding-top: 15px;
             padding-bottom: 10px;
+            margin: auto;
         }
         .progress header span {
             color: black;
@@ -83,97 +75,142 @@
     <h1>Mijn studie</h1>
 
     <h3>Studie monitor</h3>
-        <p class="limit">Informatie over de huidige status van mijn studie. De tabel is ingedeeld met kleuren die een blok representeren. Opdrachten of toetsen die zijn voltooid zullen aangegeven worden met een 'v', niet gehaalde opdrachten worden aangegeven met een 'x' en wanneer ik er nog geen cijfer voor heb gehad zal er een '#' staan. <br>Onder de tabel staat een voortgangsbalk waar makkelijk mee te zien is hoe ver ik ben. Aan het eind van het jaar is het de bedoeling dat ik minimaal 45EC heb zodat ik geen NBSA krijg. Maar als het goed is het balkje aan het eind van het jaar helemaal groen en heb ik de 60 maximale EC's die behaald kunnen worden gehaald.</p>
+        <p class="max-width">Informatie over de huidige status van mijn studie. Hieronder staat een tabel met de informatie over de toetsen van dit jaar. Wanneer ik nog geen cijfer voor een toets heb gehad zal er een '#' staan. <br>Onder de tabel staat een voortgangsbalk waar makkelijk mee te zien is hoe ver ik ben. Aan het eind van het jaar is het de bedoeling dat ik minimaal 45EC heb zodat ik geen NBSA krijg. Maar als het goed is het balkje aan het eind van het jaar helemaal groen en heb ik de 60 maximale EC's die behaald kunnen worden gehaald.</p>
 
     <table>
         <tr>
+            <th>Blok</th>
             <th>Naam</th>
             <th>Toetscode</th>
             <th>Aantal EC</th>
-            <th>Gehaald</th>
+            <th>Toets</th>
+            <th>Cijfer</th>
         </tr>
         <tr>
+            <td rowspan="3">1</td>
             <td>Opleidings- en beroepsorientatie</td>
             <td>CU75001</td>
             <td>2,5</td>
+            <td>Opdracht Beoordeling</td>
             <td>#</td>
         </tr>
         <tr>
             <td>Computer Science Basics</td>
             <td>CU75002</td>
             <td>7,5</td>
+            <td>Geschreven Toets</td>
             <td>#</td>
         </tr>
         <tr>
             <td>Programming basics</td>
             <td>CU75003</td>
             <td>5</td>
+            <td>Case Study</td>
             <td>#</td>
         </tr>
         <tr>
+            <td rowspan="3">2</td>
             <td>Professionals skills 1</td>
             <td>CU750015</td>
             <td>2,5</td>
+            <td>Portfolio opdracht</td>
             <td>#</td>
         </tr>
         <tr>
-            <td>HZ personality 1 </td>
-            <td>CU20096</td>
-            <td>2,5</td>
+            <td rowspan="2">Object-oriented programmming</td>
+            <td rowspan="2">CU75004</td>
+            <td rowspan="2">10</td>
+            <td>Project Beoordeling</td>
             <td>#</td>
         </tr>
         <tr>
-            <td>Object-oriented programmming</td>
-            <td>CU75004</td>
-            <td>10</td>
+            <td>Case Study</td>
             <td>#</td>
         </tr>
         <tr>
-            <td>Professionals skills 2 </td>
-            <td>CU75006</td>
-            <td>2,5</td>
+            <td rowspan="7">3</td>
+            <td rowspan="3">Professionals skills 2 </td>
+            <td rowspan="3">CU75006</td>
+            <td rowspan="3">2,5</td>
+            <td>Portfolio Opdracht</td>
+            <td>#</td>
+        </tr>
+        <tr>
+            <td>Geschreven Toets 1</td>
+            <td>#</td>
+        </tr>
+        <tr>
+            <td>Geschreven Toets 2</td>
             <td>#</td>
         </tr>
         <tr>
             <td>Professionele werkplek</td>
             <td>CU75007</td>
             <td>2,5</td>
+            <td>Opdracht</td>
             <td>#</td>
         </tr>
         <tr>
             <td>Framework development 1</td>
             <td>CU75008</td>
             <td>5</td>
+            <td>Case Study</td>
             <td>#</td>
         </tr>
         <tr>
-            <td>Framework project 1</td>
-            <td>CU75009</td>
-            <td>5</td>
+            <td rowspan="2">Framework project 1</td>
+            <td rowspan="2">CU75009</td>
+            <td rowspan="2">5</td>
+            <td>Portfolio Opdracht 1</td>
             <td>#</td>
         </tr>
         <tr>
-            <td>Professionals skills 3</td>
-            <td>CU750010</td>
-            <td>2,5</td>
+            <td>Portfolio Opdracht 2</td>
             <td>#</td>
         </tr>
         <tr>
-            <td>IT personality 1 </td>
-            <td>CU22128</td>
-            <td>2,5</td>
+            <td rowspan="5">4</td>
+            <td rowspan="3">Professionals skills 3</td>
+            <td rowspan="3">CU750010</td>
+            <td rowspan="3">2,5</td>
+            <td>Portfolio Opdracht</td>
+            <td>#</td>
+        </tr>
+        <tr>
+            <td>Geschreven Toets 1</td>
+            <td>#</td>
+        </tr>
+        <tr>
+            <td>Geschreven Toets 2</td>
             <td>#</td>
         </tr>
         <tr>
             <td>Framework development 2</td>
             <td>CU75012</td>
             <td>5</td>
+            <td>Portfolio Opdracht</td>
             <td>#</td>
         </tr>
         <tr>
             <td>Framework project 2</td>
             <td>CU75011</td>
             <td>5</td>
+            <td>Portfolio Opdracht</td>
+            <td>#</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Overig</td>
+            <td>HZ personality</td>
+            <td>CU20096</td>
+            <td>2,5</td>
+            <td>Portfolio</td>
+            <td>#</td>
+        </tr>
+        <tr>
+            <td>IT personality</td>
+            <td>CU22128</td>
+            <td>2,5</td>
+            <td>Portfolio</td>
             <td>#</td>
         </tr>
     </table>
@@ -190,7 +227,7 @@
     </div>
         
     <h3>Studie gids</h3>
-        <p class="limit">Hieronder zijn handige links te zien die eventueel handing zijn tijdens de studie.</p>
+        <p class="max-width">Hieronder zijn handige links te zien die eventueel handing zijn tijdens de studie.</p>
         <div><a href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen">Onderwijs en Examenregelingen</a></div>
         <div><a href="https://hz.nl/uploads/documents/Regelingen/NL/Uitvoeringsregeling-OER-HBO-ICT-Voltijd-2019-2020.pdf">Uitvoeringsregeling HBO-ICT 2019-2020</a></div>
         <div><a href="https://learn.hz.nl/my/">LearnHZ</a></div>

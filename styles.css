@@ -1,6 +1,7 @@
 body { 
     background-color: #e7e7e7;
     background-attachment: fixed;
+    text-align: center;
 }
 .navigation {
     overflow: hidden;
@@ -21,14 +22,19 @@ body {
     background-color: red;
     color: white;
 }
-p.limit {
-    max-width: 600px;
-}
 .max-width{
     max-width: 600px;
+    margin: auto;
 }
 table { 
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+}
+img {
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }

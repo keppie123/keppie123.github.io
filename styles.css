@@ -4,6 +4,18 @@ body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+table { 
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+}
+img {
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 .navigation {
     overflow: hidden;
     background-color: black;
@@ -27,18 +39,6 @@ body {
     max-width: 600px;
     margin: auto;
 }
-table { 
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 95%;
-    margin: auto;
-    margin-top: 10px;
-}
-img {
-    border: 1px solid black;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
 .button {
     background-color: #999999;
     border: black;
@@ -53,16 +53,32 @@ img {
     display: block;
     max-width: 500px;
     margin: 3px auto;
-  }
+}
+.center {
+    max-width: 425px;
+    height: 200px;
+    margin: 0 auto;
+}
 .positief > ul {
     display: inline-block;
     text-align: left;
-    margin: 10px;
+    margin: 0 auto;
     width: 150px;
 }
 .negatief > ul {
     display: inline-block;
     text-align: left;
-    margin: 10px;
+    margin: 0 auto;
     width: 150px;
 }
+.rotate:hover {
+    animation: rotation 4s infinite linear;
+  }
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

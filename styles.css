@@ -53,6 +53,7 @@ img {
     display: block;
     max-width: 500px;
     margin: 3px auto;
+    border-radius: 10px;
 }
 .center {
     max-width: 425px;

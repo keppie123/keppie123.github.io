@@ -72,14 +72,10 @@ img {
     margin: 0 auto;
     width: 150px;
 }
-.rotate:hover {
-    animation: rotation 4s infinite linear;
-  }
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
+#rotate {
+    transition: 2s;
+}
+#rotate:hover {
+    transition: 2s;
+    transform: rotate(360deg);
+}
